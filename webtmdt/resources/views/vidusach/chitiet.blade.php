@@ -1,8 +1,8 @@
-@extends("layouts.sach_layout")
+<x-book-layout>
 
-@section("title", "Chi tiết sách")
-
-@section("content")
+<x-slot name='title'>
+    Chi tiết Sách
+</x-slot>
     <h2 class="mt-3">{{ $sach->tieu_de }}</h2>
     <div class="row">
         <div class="col-md-4">
@@ -19,4 +19,4 @@
     <hr>
     <h4>Mô tả:</h4>
     <p>{{ $sach->mo_ta }}</p>
-@endsection
+</x-book-layout>

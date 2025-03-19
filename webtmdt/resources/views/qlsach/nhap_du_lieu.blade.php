@@ -1,3 +1,6 @@
+<html>
+<head></head>
+<body>
 <form action="{{ url('qlsach/luudulieu') }}" method = "get">
     <table>
         <tr>
@@ -20,3 +23,5 @@
     </table>
     {{ csrf_field() }}
 </form>
+</body>
+</html>
