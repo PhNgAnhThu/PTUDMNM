@@ -16,7 +16,7 @@ class SachController extends Controller
     // Hiển thị sách theo thể loại
     public function theloai($id)
     {
-        $data = DB::select("SELECT * FROM sach WHERE the_loai = ?", [$id]);
+        $data = DB::select("SELECT * FROM sach WHERE id_the_loai = ?", [$id]);
         return view("vidusach.index", compact("data"));
     }
 
